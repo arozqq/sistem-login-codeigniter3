@@ -1,0 +1,43 @@
+.loader{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  left: 50%; 
+  top: 50%;
+  /* transform: translate(-50%, -50%); */
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.loader-spinner {
+pointer-events: none;
+width: 4.5em;
+height: 4.5em;
+border: 0.7em solid transparent;
+border-color: #eee;
+border-top-color: #3E67EC;
+border-radius: 50%;
+animation: loadingspin 3s linear infinite;
+}
+
+@keyframes loadingspin {
+100% {
+    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+
+.animate-kedip{
+animation: kedip 1s ease-in-out infinite
+}
+
+@keyframes kedip {
+0%{
+  opacity: 0;
+}
+100%{
+  opacity: 1;
+}
+}
